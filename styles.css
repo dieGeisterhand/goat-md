@@ -35,7 +35,6 @@ ul li {
   display: flex;
   color: white;
   font-size: 15rem;
-  max-inline-size: 6ch;
   font-weight: bold;
   position: fixed;
   bottom: 2rem;
