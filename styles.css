@@ -69,9 +69,30 @@ li:hover {
     flex-direction: column;
     margin-left: auto;
     align-items: end;
+    padding: 0 5% 0 0;
+    line-height: 5rem;
   }
 
-  li {
-    padding: 20% 0 20% 0;
+
+
+}
+
+@media only screen and (max-width: 525px) {
+  .nav {
+    margin: 0 auto;
+    justify-content: flex-end;
+    align-items: center;
   }
+
+  .menu-options {
+    flex-direction: column;
+    margin-left: auto;
+    align-items: end;
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 7rem;
+  }
+
 }
