@@ -42,7 +42,7 @@ ul li {
 
 @media only screen and (max-width: 600px) {
   .nav {
-    margin: 0;
+    margin: 0 auto;
     justify-content: flex-end;
     align-items: center;
   }
