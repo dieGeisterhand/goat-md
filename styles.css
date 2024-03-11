@@ -21,11 +21,6 @@ body {
   z-index: 0;
 }
 
-ul li {
-  cursor: pointer;
-  display: inline;
-}
-
 .nav {
   z-index: 1;
   display: flex;
@@ -37,13 +32,34 @@ ul li {
 }
 
 .title {
-  font-size: 15rem;
+  font-size: 10rem;
 }
 
-@media only screen and (max-width: 600px) {
+.menu-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 0 2% 0 2%;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 800px) {
   .nav {
     margin: 0 auto;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  .menu-options {
+    flex-direction: column;
+    margin-left: auto;
+    align-items: end;
+  }
+
+  li {
+    padding: 20% 0 20% 0;
   }
 }
