@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
+}
+
+.bg {
+  filter: grayscale();
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.title {
+  color: white;
+  font-size: 15rem;
+  max-inline-size: 6ch;
+  font-family: monospace;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  padding: 10px;
+}
