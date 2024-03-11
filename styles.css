@@ -41,7 +41,9 @@ ul li {
 }
 
 @media only screen and (max-width: 600px) {
-  nav {
-    margin: 0 auto;
+  .nav {
+    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
