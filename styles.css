@@ -29,6 +29,7 @@ body {
   margin-left: auto;
   color: white;
   font-weight: bold;
+  padding: 2%;
 }
 
 .title {
@@ -44,6 +45,7 @@ body {
 
 li {
   list-style-type: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
