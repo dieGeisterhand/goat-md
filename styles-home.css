@@ -75,16 +75,15 @@ body {
     flex-direction: column;
     position: fixed;
     width: 92%;
-    top: 20%;
+    top: 32%;
     left: 4%;
     justify-content: center;
+    color: white;
+    background-color: black;
   }
 
   .nav-bar-option {
     padding: 20px;
   }
 
-  .nav-bar-left-container:active {
-    display: flex;
-  }
 }

@@ -35,13 +35,16 @@
       <div class="separation"></div>
     </div>
     <script>
-      const hamburger = document.getElementById("hamburger")
-      const navMenu = document.getElementById("nav-menu")
-    
-      function toggle() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      };
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      hamburger.addEventListener("click", function toggle() {
+        if (navMenu.style.display === "flex") {
+          navMenu.style.display = "none";
+          return;
+        } else {
+          navMenu.style.display = "flex";
+        }
+      });
     </script>
     
 
