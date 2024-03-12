@@ -45,6 +45,20 @@
           navMenu.style.display = "flex";
         }
       });
+
+      window.addEventListener("resize", function() {
+        if (window.innerWidth > 1500) {
+          navMenu.style.display = "flex";
+          hamburger.style.display = "none";
+        }
+
+        if (window.innerWidth < 1500) {
+          navMenu.style.display = "none";
+          hamburger.style.display = "block";
+        }
+          
+        });
+
     </script>
     
 

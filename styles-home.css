@@ -73,10 +73,10 @@ body {
   .nav-bar-left-container {
     display: none;
     flex-direction: column;
-    position: fixed;
+    position: block;
     width: 92%;
-    top: 14%;
     left: 4%;
+    margin-top: 299px;
     justify-content: center;
     color: white;
     background-color: black;
