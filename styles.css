@@ -58,6 +58,8 @@ li:hover {
   text-decoration-thickness: 0.3rem;
 }
 
+/*queries*/
+
 @media only screen and (max-width: 650px) {
   body {
     height: 100dvh;
@@ -76,9 +78,6 @@ li:hover {
     padding: 0 5% 0 0;
     line-height: 5rem;
   }
-
-
-
 }
 
 @media only screen and (max-width: 580px) {
