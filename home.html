@@ -12,13 +12,18 @@
   <body>
     <div class="nav-bar">
       <div class="nav-bar-container">
-        <div class="nav-bar-left-container">
+        <div class="nav-bar-left-container" id="nav-menu">
           <div class="nav-bar-option" id="about-button">
             About Us
           </div>
           <div class="nav-bar-option" id="contribute-button">
             Contribute
           </div>
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggle()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
         <div class="nav-bar-title">
           Goats.
@@ -27,9 +32,18 @@
           Lang
         </div>
       </div>
+      <div class="separation"></div>
     </div>
-    <script src="main.js">
+    <script>
+      const hamburger = document.getElementById("hamburger")
+      const navMenu = document.getElementById("nav-menu")
+    
+      function toggle() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      };
     </script>
+    
 
   </body>
 </html>

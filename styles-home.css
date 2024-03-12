@@ -8,6 +8,7 @@ body {
   font-family: monospace;
   height: 100dvh;
   width: 100vw;
+  background-color: rgb(255, 255, 255);
 }
 
 .nav-bar {
@@ -32,6 +33,20 @@ body {
   font-size: 2rem;
 }
 
+.hamburger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: rgb(0, 0, 0);
+}
+
 .nav-bar-title {
   margin: 0 auto;
   font-size: 3rem;
@@ -48,11 +63,28 @@ body {
   border-bottom: solid 2px black;
   margin: 0 4%;
 }
-/*
+
 @media (max-width: 1500px) {
-  #about-button,
-  #contribute-button {
+
+  .hamburger {
+    display: block;
+  }
+  
+  .nav-bar-left-container {
     display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 92%;
+    top: 20%;
+    left: 4%;
+    justify-content: center;
+  }
+
+  .nav-bar-option {
+    padding: 20px;
+  }
+
+  .nav-bar-left-container:active {
+    display: flex;
   }
 }
-*/
