@@ -78,7 +78,7 @@ body {
   .nav-bar-left-container {
     display: none;
     flex-direction: column;
-    position: block;
+    position: absolute;
     width: 92%;
     left: 4%;
     margin-top: 287px;
