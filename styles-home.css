@@ -4,7 +4,7 @@
 }
 
 body {
-  color: rgb(255, 255, 255);
+
   font-family: monospace;
   height: 100dvh;
   width: 100vw;
@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  color: rgb(255, 255, 255);
 }
 
 .nav-bar {
@@ -74,6 +75,27 @@ body {
   margin: 0 4%;
 }
 
+.top-banner-text-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 30%;
+  width: 485px;
+  height: fit-content;
+  padding: 20px;
+}
+
+
+.top-banner-text p:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.top-banner-text p:nth-child(2) {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 1500px) {
 
   .hamburger {
@@ -101,6 +123,14 @@ body {
 @media (max-width: 950px) {
   .top-banner {
     background-position: left;
+  }
+
+  .top-banner-text p:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .top-banner-text p:nth-child(2) {
+    font-size: 1rem;
   }
 }
 
@@ -133,5 +163,6 @@ body {
   .nav-bar-lang-button {
     font-size: 1rem;
   }
+
 
 }
