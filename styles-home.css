@@ -3,8 +3,11 @@
   padding: 0;
 }
 
-body {
+a {
+  text-decoration: none;
+}
 
+body {
   font-family: monospace;
   height: 100dvh;
   width: 100vw;
@@ -70,6 +73,18 @@ body {
   position: absolute;
   right: 10%;
   font-size: 2rem;
+  border: 2px solid white;
+  padding: 20px 10px;
+  border-radius: 60%;
+}
+
+.nav-bar-lang-button:hover {
+  background-color: white;
+}
+
+.nav-bar-lang-button > a {
+  height: 100%;
+  width: 100%;
 }
 
 .separation {
@@ -168,6 +183,7 @@ body {
   
   .nav-bar-lang-button {
     font-size: 1rem;
+    padding: 15px 10px;
   }
 
 
