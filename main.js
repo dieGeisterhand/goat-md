@@ -22,9 +22,9 @@ window.addEventListener("resize", function() {
   }
 });*/
 
-const home = document.getElementById("home");
-const contentContainer = document.getElementById("content-container");
+const contentContainer = document.getElementById("content-container-home");
 
+const home = document.getElementById("home");
 home.addEventListener("click", function homeMenu() {
   if (contentContainer.style.display === "none") {
     contentContainer.style.display = "flex";
@@ -32,5 +32,6 @@ home.addEventListener("click", function homeMenu() {
     contentContainer.style.display = "none";
   }
 });
+
 
 

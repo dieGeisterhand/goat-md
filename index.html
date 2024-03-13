@@ -13,7 +13,11 @@
     <video autoplay muted loop class="bg">
       <source src="bg.mp4" type="video/mp4">
     </video>
-    <div class="content-container" id="content-container">
+    <div class="content-container" id="content-container-home">
+    </div>
+    <div class="content-container" id="content-container-about">
+    </div>
+    <div class="content-container" id="content-container-about">
     </div>
     <div class="nav">
       <ul class="menu-options">
@@ -23,13 +27,13 @@
           </li>
         </a>
         <a href="#">
-          <li class="option">
+          <li class="option" id="about" onclick="aboutMenu();">
             About
           </li>
         </a>
         <a href="#">
-          <li class="option">
-            Support Us
+          <li class="option" id="contribute" onclick="contributeMenu();">
+            Contribute
           </li>
         </a>
       </ul>
