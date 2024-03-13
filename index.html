@@ -10,34 +10,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <video  autoplay
-    muted 
-    loop 
-    class="bg">
+    <video autoplay muted loop class="bg">
       <source src="bg.mp4" type="video/mp4">
     </video>
-      <div class="nav">
-        <ul class="menu-options">
-          <a href="home.html">
-            <li class="option">
-              Home
-            </li>
-          </a>
-          <a href="#">
-            <li class="option">
-              About
-            </li>
-          </a>
-          <a href="#">
-            <li class="option">
-              Support Us
-            </li>
-          </a>
-        </ul>
-        <div class="title">
-          <p>Goats.</p>
-        </div>
+    <div class="content-container" id="content-container">
+    </div>
+    <div class="nav">
+      <ul class="menu-options">
+        <a href="#">
+          <li class="option" id="home" onclick="homeMenu();">
+            Home
+          </li>
+        </a>
+        <a href="#">
+          <li class="option">
+            About
+          </li>
+        </a>
+        <a href="#">
+          <li class="option">
+            Support Us
+          </li>
+        </a>
+      </ul>
+      <div class="title">
+        <p>Goats.</p>
       </div>
+    </div>
     <script src="main.js">
     </script>
   </body>

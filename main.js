@@ -1,4 +1,4 @@
-const hamburger = document.getElementById("hamburger");
+/*const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
 hamburger.addEventListener("click", function toggle() {
@@ -20,5 +20,18 @@ window.addEventListener("resize", function() {
     navMenu.style.display = "none";
     hamburger.style.display = "block";
   }
-    
-});
+});*/
+
+const home = document.getElementById("home");
+const contentContainer = document.getElementById("content-container");
+
+home.addEventListener("click", homeMenu);
+
+function homeMenu() {
+  if (contentContainer.style.display === "none") {
+    contentContainer.style.display = "flex";
+    return;
+  } 
+
+};
+
