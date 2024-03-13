@@ -10,8 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <video autoplay muted loop class="banner-video">
+      <source src="banner.mp4" type="video/mp4"/>
+    </video>
     <div class="top-banner">
-      
       <div class="nav-bar">
         <div class="nav-bar-container">
           <div class="nav-bar-left-container" id="nav-menu">
@@ -34,20 +36,15 @@
           <div class="nav-bar-title">
             Goats.
           </div>
-          <div class="nav-bar-lang-button">
-            <a href="#">
-              ESP
-            </a>
-          </div>
         </div>
-        <div class="separation"></div>
+    <!--
         <div class="top-banner-text-container">
           <div class="top-banner-text">
             <p></p>
             <p></p>
           </div>
         </div>
-
+    -->
       </div>
     </div>
     <div class="category-section">
@@ -59,33 +56,7 @@
       </div>
     </div>
     
-    <script>
-      const hamburger = document.getElementById("hamburger");
-      const navMenu = document.getElementById("nav-menu");
-      hamburger.addEventListener("click", function toggle() {
-        if (navMenu.style.display === "flex") {
-          navMenu.style.display = "none";
-          return;
-        } else {
-          navMenu.style.display = "flex";
-        }
-      });
-
-      window.addEventListener("resize", function() {
-        if (window.innerWidth > 1500) {
-          navMenu.style.display = "flex";
-          hamburger.style.display = "none";
-        }
-
-        if (window.innerWidth < 1500) {
-          navMenu.style.display = "none";
-          hamburger.style.display = "block";
-        }
-          
-        });
-
+    <script src="main.js">
     </script>
-    
-
   </body>
 </html>

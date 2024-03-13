@@ -1,8 +1,24 @@
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 
-const navMenu = document.querySelector(".nav-bar-option");
+hamburger.addEventListener("click", function toggle() {
+  if (navMenu.style.display === "flex") {
+    navMenu.style.display = "none";
+    return;
+  } else {
+    navMenu.style.display = "flex";
+  }
+});
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-})
+window.addEventListener("resize", function() {
+  if (window.innerWidth > 1500) {
+    navMenu.style.display = "flex";
+    hamburger.style.display = "none";
+  }
+
+  if (window.innerWidth < 1500) {
+    navMenu.style.display = "none";
+    hamburger.style.display = "block";
+  }
+    
+});
