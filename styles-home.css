@@ -142,6 +142,8 @@ body {
 
   .nav-bar-option {
     padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
 }
@@ -173,12 +175,14 @@ body {
     left: 4%;
     margin-top: 249px;
     justify-content: center;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 1rem;
   }
 
   .nav-bar-option {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
   }
 
