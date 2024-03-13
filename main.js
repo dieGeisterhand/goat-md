@@ -25,13 +25,12 @@ window.addEventListener("resize", function() {
 const home = document.getElementById("home");
 const contentContainer = document.getElementById("content-container");
 
-home.addEventListener("click", homeMenu);
-
-function homeMenu() {
+home.addEventListener("click", function homeMenu() {
   if (contentContainer.style.display === "none") {
     contentContainer.style.display = "flex";
-    return;
-  } 
+  } else {
+    contentContainer.style.display = "none";
+  }
+});
 
-};
 
